@@ -1,0 +1,612 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.5;
+    box-sizing: border-box;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* -------------------------------------------------------------------------------------- */
+
+.nav-logo {
+    width: 100px;
+    height: 100px;
+    mix-blend-mode: multiply;
+    margin-left: 30px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between; /* Aligns children at both ends */
+    align-items: center;
+    padding: 10px;
+    background-color: #ffffff;
+}
+
+.nav-list {
+    display: flex;
+    align-items: center;
+}
+
+.nav-list ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.nav-list ul li {
+    margin: 0 20px; /* Adjust spacing between list items */
+    cursor: pointer;
+}
+
+.nav-list ul li a{
+    color: rgb(132, 129, 129);
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.nav-list ul li :hover {
+    color: rgb(0, 0, 0);
+}
+
+.nav-cart {
+    margin-left: 10px; /* Adjust spacing between cart icon and list items */
+    margin-right: 20px;
+    width: 50px;
+    height: 50px;
+}
+
+
+
+
+
+/* ------------------------------------------------------------------------------------------ */
+
+.background-image {
+    position: relative;
+    width: 100%;
+    height: 50vh;
+    background-image: url('./images/bicycle.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.text-overlay {
+    position: absolute;
+    top: 25%;
+    left: 15%;
+    /* transform: translate(-50% , -50%); */
+    color: white;
+    font-size: 24px;
+    /* text-align: center; */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.selection {
+    width: 75%;
+    height: 100px;
+    background-color: rgb(255, 255, 255);
+    /* border: 1px solid #302f2f; */
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    /* margin-top: 10px; */
+    margin-bottom: 70px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.selection .options {
+    padding: 10px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.selection .options .option {
+    padding: 10px 10px;
+    /* margin: 0 0px; */
+    border: 1px solid #ccc;
+    cursor: pointer;
+    font-size: 13px;
+    border-radius: 5px;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.selection .options .option :hover {
+    background-color: #cadc25;
+}
+
+.active {
+    background-color: rgb(17, 16, 59);
+    color: white;
+}
+
+.selection .options .select {
+    width: 140px;
+    height: 25px;
+    color: rgb(17, 16, 59);
+    border-radius: 5px;
+}
+
+.selection .options .button {
+    width: 140px;
+    height: 25px;
+    background-color: rgb(17, 16, 59);
+    color: white;
+    border-radius: 5px;
+}
+
+/* ----------------------------------------------------------------------------------------------------------------------- */
+
+.offer {
+
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70vw;
+    margin-bottom: 80px;
+
+}
+
+.offer .car-cover1 {
+    width: 500px;
+    height: 200px;
+    background-color: rgb(85, 57, 151);
+    margin-right: 40px;
+    margin-bottom: 10px;
+    padding: 10px 10px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+}
+
+.offer .car-cover2 {
+    width: 500px;
+    height: 200px;
+    background-color: rgb(249, 231, 210);
+    padding: 10px 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.offer .car-cover1 img {
+    width: 200px;
+    height: 200px;
+    mix-blend-mode: multiply;
+}
+
+.offer .car-cover2 img {
+    width: 200px;
+    height: 200px;
+    mix-blend-mode: multiply;
+}
+
+.offer .car-cover2 .off {
+    width: 70px;
+    height: 70px;
+    background-color: white;
+    color: black;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 80px;
+}
+
+.offer .car-cover1 .off {
+    width: 70px;
+    height: 70px;
+    background-color: white;
+    color: rgb(12, 9, 82);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 80px;
+}
+
+.offer .car-cover1 .car-cover-content button {
+    width: 100px;
+    height: 20px;
+    border-radius: 3px;
+    border: none;
+    box-shadow: 2px 2px 4px rgba(42, 12, 87, 0.5);
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.offer .car-cover2 .car-cover-content button {
+    width: 100px;
+    height: 20px;
+    border-radius: 3px;
+    border: none;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.offer .car-cover2 .car-cover-content {
+    padding-left: 20px;
+}
+
+.offer .car-cover1 .car-cover-content {
+    padding-left: 20px;
+}
+
+.offer .car-cover2 .car-cover-content p {
+    font-size: 13px;
+}
+
+.offer .car-cover1 .car-cover-content p {
+    font-size: 13px;
+}
+
+/* ----------------------------------------------------------------------------------------- */
+
+.top-title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.top-para{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+
+}
+
+.cover-categories{
+    display: flex;
+    justify-content: space-evenly; /* Aligns children at both ends */
+    align-items: center;
+    padding: 10px;
+    background-color: #ffffff;
+    margin-bottom: 50px;
+}
+
+.cover-categories .rider1{
+    height: 200px;
+    width: 200px;
+    background-color: rgb(231, 244, 251);
+    border-radius: 5px;
+}
+.cover-categories .rider2{
+    height: 200px;
+    width: 200px;
+    background-color: rgb(252, 244, 235);
+    border-radius: 5px;
+}
+
+.cover-categories .B-rider .sweet-rider{
+    width: 160px;
+    height: 200px;
+}
+
+.cover-categories .rider1 .motorcycle-cover
+{
+    width: 140px;
+    height: 130px;
+    mix-blend-mode: multiply;
+    margin-left: 20px;
+}
+
+.cover-categories .rider1 .bicycle-cover
+{
+    width: 130px;
+    height: 130px;
+    mix-blend-mode: multiply;
+    margin-left: 20px;
+}
+
+.cover-categories .rider2 .rickshaw-cover
+{
+    width: 140px;
+    height: 120px;
+    mix-blend-mode: multiply;
+    margin-left: 20px;
+}
+.cover-categories .rider2 .car-top-cover
+{
+    width: 130px;
+    height: 130px;
+    mix-blend-mode: multiply;
+    margin-left: 20px;
+}
+
+.cover-categories .rider1 .rider-content{
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.cover-categories .rider2 .rider-content{
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+/* ------------------------------------------------------------------------------------------- */
+
+.choose-us{
+    margin-top: 100px;
+    margin-bottom: 130px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
+}
+
+.choose-us .why-title{
+    background: linear-gradient(135deg, rgb(44, 172, 21), rgb(164, 245, 153)); /* Gradient from aqua to blue */
+
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    margin-top: 80px;
+    position: absolute;
+    top: 0;
+    left: 20%; /* Overlap by 20% on the left */
+}
+
+.choose-us .why-para{
+    background-color: rgb(197, 193, 193);
+    height: 400px;
+    width: 400px;
+    border-radius: 50%;
+
+    margin-top: 30px; /* Adjust this value for spacing between title and paragraph */
+    padding-left: 20px; /* Adjust this value for spacing between the left edge of the container and paragraph */
+}
+
+
+.choose-us .why-title h2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 110px;
+    color: white;
+}
+
+.choose-us .why-para p{
+    margin-top: 140px;
+    margin-left: 100px;
+    padding-right: 20px;
+}
+
+
+
+
+
+/* ------------------------------------------------------------------------------------------- */
+
+
+.icons{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 50px;
+
+}
+
+.icons .icon-cont .ic{
+    width: 100px;
+    height: 100px;
+    mix-blend-mode: multiply;
+
+}
+
+.icons .icon-cont h4{
+    color: rgb(67, 66, 66);
+}
+
+/* --------------------------------------------------------------------------------- */
+
+.second-last{
+     background-color: rgb(210, 208, 208);
+     width: 100%;
+     height: 350px;
+}
+
+.second-last .testimonials{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.second-last .testimonials h2{
+    color: rgb(21, 21, 72);
+    font-family: 'Times New Roman', Times, serif;
+    margin-top: 30px;
+}
+
+.second-last .test{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.second-last .test .part {
+    background-color: white;
+    height: 200px;
+    width: 380px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+
+.second-last .test .part .quotes-icon{
+    width: 20px;
+    height: 20px;
+    padding-left: 50%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.second-last .test .part .test-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-bottom: 20px;
+}
+
+
+.second-last .test .part h5{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* --------------------------------------------------------------------------------------------------------------- */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+
+.container {
+    max-width: 1170px;
+    margin: auto;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+ul {
+    list-style: none;
+}
+
+.footer {
+    background-color: rgb(255, 245, 232);
+    padding: 70px 0;
+    width: 100%;
+    /* position: fixed; */
+}
+
+.footer-col {
+    width: 15%;
+    padding: 0 15px;
+}
+
+.footer-col h4 {
+    font-size: 15px;
+    text-transform: capitalize;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+
+.footer-col ul li :not(:first-child) {
+    margin-bottom: 10px;
+}
+
+.footer-col ul li a {
+    font-size: 13px;
+    text-transform: capitalize;
+    color: black;
+    text-decoration: none;
+    font-weight: 300;
+    display: block;
+    line-height: 2.5;
+}
+
+.footer-col .social-links a {
+    color: white;
+    background-color: rgb(175, 171, 171);
+    display: inline-block;
+    height: 30px;
+    width: 30px;
+    line-height: 30px;
+    margin: 10px 20px 10px 0;
+    text-align: center;
+    border-radius: 50px;
+}
+
+
+.footer-col .footer-left img {
+    height: 100px;
+    width: 100px;
+    mix-blend-mode: multiply;
+    margin-bottom: 20px;
+}
+
+.footer-col .footer-left input {
+    height: 20px;
+    border-radius: 2px;
+    margin-bottom: 10px;
+    padding-left: 0.3rem;
+    font-size: 0.7rem;
+    border: 1px solid lightgray;
+    outline: none;
+}
+
+/*responsive*/
+@media(max-width: 767px) {
+    .footer-col {
+        width: 50%;
+        margin-bottom: 30px;
+    }
+
+    .footer-col .footer-left img {
+        margin-bottom: 30px;
+    }
+
+    .footer-col .footer-left input {
+        /* width: 100px; */
+        margin-bottom: 10px;
+    }
+
+    .selection {
+        width: 75%;
+        height: 100px;
+        background-color: rgb(255, 255, 255);
+        /* border: 1px solid #302f2f; */
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 5px;
+        /* margin-top: 10px; */
+        margin-bottom: 70px;
+        box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    }
+
+}
+
+@media(max-width: 574px) {
+    .footer-col {
+        width: 50%;
+        margin-bottom: 30px;
+    }
+
+    .footer-col .footer-left img {
+        margin-bottom: 30px;
+    }
+
+    .footer-col .footer-left input {
+        margin-bottom: 10px;
+    }
+}
